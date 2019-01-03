@@ -4,7 +4,7 @@ First To create a Mother Root File run :
 
 Root -l RootTree.C
 
-This will create a root file which will contain 3 integers branches, 3 float branches and 1 vector branch with 10 entries.
+This will create a root file(OriginalTree.root) which will contain 3 integers branches, 3 float branches and 1 vector branch with 10 entries.
 
 Now to read this Mother root file and make a Root file with the same tree structure but with the entries which pass some cuts, run :
 
@@ -15,5 +15,15 @@ Root -l
 Analysis a
 
 a.Loop()
+
+If you want to know how Analysis.h, Analysis.C and the branches in Analysis.C came from, then the answer from MakeClass(). You can get this by doing the following : 
+
+Root -l OriginalTree.root
+
+.ls
+
+t1->MakeClass("MyAnalysis")
+
+This will create two files namely, MyAnalysis.h and MyAnalysis.h. If you now open the MyAnalysis.h you can clearly see the branches specified.
 
 Please don't hesitate to write to me (debabrata.bhowmik@cern.ch) if you have any question.Thanks.
