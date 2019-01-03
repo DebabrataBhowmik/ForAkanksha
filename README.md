@@ -18,6 +18,8 @@ a.Loop()
 
 You will get a root file named NewFile.root with same tree structure but only 8 entries with it. As, a cut on i2>4 is applied, it has thrown 2 events from the mother tree.
 
+===============================================================================================================================
+
 Now, if you want to know how Analysis.h, Analysis.C and the branches in Analysis.C came from, then the answer from MakeClass(). You can get this by doing the following : 
 
 Root -l OriginalTree.root
