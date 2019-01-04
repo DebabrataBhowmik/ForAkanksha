@@ -30,6 +30,6 @@ Root -l OriginalTree.root
 
 t1->MakeClass("MyAnalysis")
 
-This will create two files namely, MyAnalysis.h and MyAnalysis.h. If you now open the MyAnalysis.h you can clearly see the branches specified.
+This will create two files namely, MyAnalysis.h and MyAnalysis.C. If you now open the MyAnalysis.h you can clearly see the branches specified.
 
 Please don't hesitate to write to me (debabrata.bhowmik@cern.ch) if you have any question.Thanks.
